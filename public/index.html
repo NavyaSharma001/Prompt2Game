@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3/dist/phaser.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Press Start 2P', cursive;
+      background: url('https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1600&auto=format&fit=crop') no-repeat center center fixed; background-size: cover;
+      color: #fff;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 30px;
+      font-size: 28px;
+      color: #ff00ff;
+      text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+    }
+
+    #container {
+      margin-top: 30px;
+    }
+
+    input {
+      padding: 12px;
+      width: 320px;
+      border-radius: 6px;
+      border: 2px solid #00ffff;
+      background: url('https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1600&auto=format&fit=crop') no-repeat center center fixed; background-size: cover;
+      color: #00ffff;
+      font-family: inherit;
+    }
+
+    button {
+      padding: 12px 20px;
+      margin-left: 10px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      background: url('https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1600&auto=format&fit=crop') no-repeat center center fixed; background-size: cover;
+      color: white;
+      font-family: inherit;
+      box-shadow: 0 0 15px #ff00ff;
+    }
+
+    button:hover {
+      background: url('https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1600&auto=format&fit=crop') no-repeat center center fixed; background-size: cover;
+      box-shadow: 0 0 20px #00ffff;
+    }
+
+    #ui {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #00ffff;
+    }
+
+    #game {
+      margin: 30px auto;
+      width: 820px;
+      min-height: 600px;
+      border: 3px solid #ff00ff;
+      box-shadow: 0 0 30px #ff00ff;
+      background: url('https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1600&auto=format&fit=crop') no-repeat center center fixed; background-size: cover;
+    }
+  </style>
+
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<h1>🎮 P2G — Prompt to Game</h1>
+
+<div id="container">
+  <input id="prompt" placeholder="hard alien shooter"/>
+  <button onclick="generate()">START</button>
+</div>
+
+<div id="ui"></div>
+<div id="game"></div>
+
+<script src="main.js"></script>
+
+
+
+
+</body>
+</html>
