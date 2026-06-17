@@ -1,0 +1,7 @@
+{
+"name":"ai-game-v5",
+"version":"1.0.0",
+"main":"server/server.js",
+"scripts":{"start":"node server/server.js"},
+"dependencies":{"express":"^4.18.2","cors":"^2.8.5"}
+}
